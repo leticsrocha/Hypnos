@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "OpenDyslexic";
+}
+
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("../fontes/OpenDyslexic-Regular.otf") format("otf"),
+}
+
+/*LOGO*/
+
+.logofooter{
+
+  margin-top: 60px;
+
+  height: 100px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 1px 25px 6px rgba(0,0,0,0.88); 
+box-shadow: 0px 1px 25px 6px rgba(0,0,0,0.88);
+    
+
+}
+
+        .logo
+        {
+            display: block;
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            left: 49.5%;
+            transform: translateX(-50%);
+        }
+        .logo img{
+            width: 100%;
+        }
+
+
+
+
+/*MENU*/
+
+
+.menu {
+  margin: 15px;
+	
+}
+.menu > ol {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+}
+.menu > ol > li {
+    border-radius: 2px;
+  background: #000043;
+  border-left: 5px solid var(--gradient-color);
+  margin-bottom: 2px;
+  position: relative;
+  transition: 0.5s;
+}
+.menu > ol > li:nth-child(1) {
+  --accent-color: #a6d4ed;
+  --gradient-color: #0079ff;
+}
+.menu > ol > li:nth-child(2) {
+  --accent-color: #2f77f7;
+  --gradient-color: #83b0ff;
+}
+.menu > ol > li:nth-child(3) {
+  --accent-color: #739eff;
+  --gradient-color: #003ac2;
+}
+.menu > ol > li:nth-child(4) {
+  --accent-color: #739eff;
+  --gradient-color: #003ac2;
+}
+.menu > ol > li:nth-child(5) {
+  --accent-color: #2f77f7;
+  --gradient-color: #83b0ff;
+}
+.menu > ol > li:nth-child(6) {
+  --accent-color: #a6d4ed;
+  --gradient-color: #0079ff;
+}
+.menu > ol > li a {
+  color: #fbfbfb;
+  display: block;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+.menu > ol > li a:not(:last-child):before {
+  content: "⌵";
+  font-family: "OpenDyslexic";
+    line-height: 25px;
+  font-size: 1em;
+  line-height: 50px;
+  position: absolute;
+  right: 25px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+.menu > ol > li:focus,
+.menu > ol > li:focus-within,
+.menu > ol > li:hover {
+  z-index: 100;
+}
+.menu > ol > li:focus:after,
+.menu > ol > li:focus-within:after,
+.menu > ol > li:hover:after {
+  background: linear-gradient(to left, var(--accent-color), var(--gradient-color));
+  max-width: 800px;
+    
+}
+.menu > ol > li:focus .sub-menu,
+.menu > ol > li:focus-within .sub-menu {
+  max-height: 500px;
+
+}
+.menu > ol > li:focus a:before,
+.menu > ol > li:focus-within a:before {
+  transform: rotate(-180deg);
+}
+.menu > ol > li:after {
+  background: #000043;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+  max-width: 0;
+  overflow: hidden;
+    
+}
+.menu > ol .sub-menu {
+  border-left: 1px solid #fbfbfb;
+  margin-left: 22.5px;
+  list-style: none;
+  max-height: 0px;
+  overflow: hidden;
+  padding-left: 7.5px;
+  position: relative;
+  transition: 0.5s;
+  z-index: 1;
+}
+.menu > ol .sub-menu li {
+  font-size: 0.9em;
+}
+.menu > ol .sub-menu li:hover,
+.menu > ol .sub-menu li a:focus {
+  background: rgba(60, 60, 60, 0.3);
+}
+.menu > ol .sub-menu li a:after {
+  bottom: 5px;
+  height: 1px;
+}
+.menu > ol .sub-menu li a:hover:after,
+.menu > ol .sub-menu li a:focus:after {
+  width: 15px;
+}
+
+
+
+@media (max-width: 650px){
+     
+    .menu{
+        
+        margin-top: 200px;
+        
+    }
+    
+}
+
+/*RESPONSIVIDADE2 - 600PX*/
+
+@media (min-width: 650px) {
+    
+
+    .menu {
+    margin: 0;
+    margin-top: 30vh;
+        
+/*        COLOQUEI 200PX PARA MANTER O TEXTO INTACTO QUANDO PASSAR O MOUSE*/
+        
+	height: 200px;
+        
+  }
+.logo{
+        
+        width: 150px;
+        height: 150px;
+        
+    }
+    
+  a:focus,
+  a:hover {
+    position: relative;
+  }
+  a:focus:after,
+  a:hover:after {
+    width: 50px;
+  }
+  a:after {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+    
+    
+  .menu > ol {
+    display: block;
+    max-width: none;
+    text-align: center;
+  }
+  .menu > ol > li {
+    border-top: 5px solid var(--accent-color);
+    border-left: 0;
+    display: inline-block;
+    margin-left: -5px;
+    vertical-align: top;
+    width: 100px;
+  }
+  .menu > ol > li:hover:after,
+  .menu > ol > li:focus:after,
+  .menu > ol > li:focus-within:after {
+    background: linear-gradient(to bottom, var(--accent-color), var(--gradient-color));
+    border-radius: 3px;
+    top: -15px;
+    bottom: -15px;
+    left: -15px;
+    right: -15px;
+  }
+  .menu > ol > li:hover .sub-menu,
+  .menu > ol > li:focus .sub-menu,
+  .menu > ol > li:focus-within .sub-menu {
+    max-height: 750px;
+      
+  }
+  .menu > ol > li a:not(:last-child):before {
+    right: 12.5px;
+  }
+  .menu > ol > li:hover a:before {
+    transform: rotate(-180deg);
+  }
+  .menu > ol .sub-menu {
+    border-left: 0;
+    margin: 15px -15px -15px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 680px) {
+    
+    .container{
+        
+        margin-bottom: 600px;
+        
+        
+    }
+    
+}
+
+/*RESPONSIVIDADE3 - 810PX*/
+
+@media (min-width: 810px) {
+    
+    
+    
+    .menu {
+    margin: 0;
+    margin-top: 30vh;
+  }
+    .menu > ol > li {
+    width: 130px;
+  }
+  .menu > ol > li a:not(:last-child):before {
+    right: 25px;
+  }
+    
+}
+@media (max-width: 900px){
+    
+    .paragrafo1{
+        
+        padding-right: 60px;
+        padding-left: 60px;
+        
+    }
+    
+}
+
+@media (max-width: 1342px){
+    
+    .logo{
+        
+        display: none;
+        
+    }
+    
+    .logo2{
+        margin-top: 50px;
+        margin-bottom: -170px;
+        transform: translateX(-50%);
+        position: relative;
+        left: 49.5%;
+        display: block;
+        width: 115px;
+        height: 115px;
+    }
+    
+    .sobre{
+        
+        margin-top: 250px;
+        
+    }
+    
+    .sobredireita{
+        
+        margin-top: 50px;
+        
+    }
+    
+    .sonhost{
+        
+        margin-top: -100px;
+        
+        
+    }
+    
+    .esquerda{
+    
+    margin-top: -200px;
+    
+}
+
+    .direita{
+        
+        margin-top: -400px;
+        
+    }
+}
+
+.container{
+    
+    height: 750px;
+    
+}
+
+@media (min-width: 1342px){
+    
+    .logo2{
+        
+        display: none;
+        
+    }
+    
+}
+
+
+
+/*TESTE*/
+
+@media (max-width: 1020px){
+
+    .sobrenos{
+        
+        display: block;
+        
+    }
+    .esquerda{
+        
+        display: none;
+        
+    }
+    
+    .sobretexto{
+        text-align: justify;
+        display: block;
+        line-height: 25px;
+        padding-right: 60px;
+        padding-left: 60px
+    }
+.direita{
+	
+	display: none;
+	
+}
+
+}
+
+/*RESPONSIVIDADE4 FINAL - 1360PX*/
+
+@media (min-width: 1360px){
+    
+    
+    .menu {
+    
+    margin-top: 35px;
+        position: absolute;
+		top:0;
+		left:24%;
+		z-index: 50;
+  }
+    .menu > ol > li:nth-child(1),
+    .menu > ol > li:nth-child(2),
+    .menu > ol > li:nth-child(3)
+    {
+        left: 0%;
+        float: left;
+    } 
+    
+    
+    .logo{
+                margin-top: -176px;
+        position: absolute;
+		z-index:100;
+        top:200px;
+		left:50%;;
+        //transform: translateX(-50%);
+        display: block;
+        width: 130px;
+        height: 130px;
+        
+    }
+    
+    
+    .menu > ol > li:nth-child(6),
+    .menu > ol > li:nth-child(5),
+    .menu > ol > li:nth-child(4)
+    {
+        float: left;
+        left: 12%;
+    } 
+    section{
+		top:0;
+	}
+
+body {
+	background-color: #fff;
+	
+}
+
+.contenedor {
+	width: 100%;
+    padding: 20px;
+}
+
+header {
+	padding: 50px 0 70px 0;
+	width: 100%;
+	margin: auto;
+}
+
+header h1, header h3 {
+	font-size: 75px;
+	color: #555;
+	font-weight: bold;
+	text-align: center;
+	transform: translateY(-20px);
+	opacity: 0;
+	transition: all .3s;
+	font-family: "OpenDyslexic";
+
+}
+
+header h3 {
+	font-size: 20px;
+	letter-spacing: 4px;
+	padding-left: 8px;
+	transition: all .5s;
+	font-family: "OpenDyslexic";
+
+	
+	
+}
+
+.active {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+#roraima, #kukenan, #salto-angel {
+	background-attachment: fixed;
+	background-color: #444;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 160px 0;
+}
+
+
+
+.parallax {
+	width: 100%;
+	margin: auto;
+    border-radius: 20px;
+}
+
+.title-parallax {
+	text-align: center;
+	font-size: 75px;
+	color: white;
+	font-weight: bold;
+	font-family: "OpenDyslexic";
+
+}
+
+.contenedor-texto {
+	width: 60%;
+	margin: auto;
+}
+
+section {
+	overflow: hidden;
+}
+p, ul {
+	font-family: "OpenDyslexic";
+	margin: 45px 0;
+	line-height: 25px;
+	font-size: 18px;
+	text-align: justify;
+	list-style: none;
+	color: #555;;
+}
+
+div p:first-child:first-letter {
+	font-size: 30px;
+	padding: 10px 2px 0 0;
+	font-weight: bold;
+	color: #555;
+}
+
+hr {
+	width: 240px;
+	border: 3px solid gray;
+	margin: auto;
+}
+@media all and (max-width: 800px) {
+	.contenedor-texto {
+		width: 75%;
+	}
+	#roraima, #kukenan, #salto-angel {
+		padding: 200px 0;
+	}
+	h1.title-parallax {
+		font-size: 52px;
+	}
+	hr {
+		width: 100px;
+	}
+	h1.title-header {
+    	font-size: 35px;
+	}
+	header h3 {
+		font-size: 17px;
+		padding-left: 9px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.contenedor-texto {
+		width: 80%;
+	}
+	#roraima, #kukenan, #salto-angel {
+		padding: 150px 0;
+	}
+	h1.title-parallax {
+		font-size: 45px;
+	}
+	hr {
+		width: 60px;
+	}
+	h1.title-header {
+    	font-size: 30px;
+	}
+	header h3 {
+		font-size: 13px;
+		padding-left: 10px;
+	}
+	body {
+		padding: 14px;
+	}
+}
+
+/*FOOTER*/
+
+.btfooter{
+
+  height: 40px;
+  
+  }
+  
+
+section{
+  text-align:center;
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:unset;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #000043;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h1{
+	
+  color: #fff;
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+
+footer{
+    
+    height: 125px;
+    background: #000043;
+    isolation: isolate;
+}
+
+
+
+footer{
+    
+    height: 80px;
+    background: #000043;
+    isolation: isolate;
+    
+}

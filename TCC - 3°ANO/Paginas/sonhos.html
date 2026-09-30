@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hypnos – Uma Noite Melhor</title>
+    <link rel="stylesheet" href="../CSS/style.css"/>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+      
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+      
+      <link rel="stylesheet" href="../CSS/botaofonte.css">
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
+      <link rel="icon" href="../Logos/Logos/finallogo.png">
+      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <style type="text/css">
+      
+form{
+    position: relative;
+    margin-top: 190px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: black;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 3px solid #fff;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+        background: black;
+    color:  white;
+
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover,
+form:valid{
+    width: 400px;
+    cursor: pointer;
+}
+
+form:hover input,
+form:valid input{
+    display: block;
+}
+
+form:hover .fa,
+form:valid .fa{
+    background: #2771f2;
+    color: white;
+}
+
+
+form a {
+  display: none;
+  position: absolute;
+  top: 70px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  color: white;
+  text-align: center; 
+  width: 100%;
+}
+
+form:valid a {
+  display: block;
+}
+ 
+/*          VIDEO*/
+      
+          .banner video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+    z-index: -1;
+}   
+          
+      
+      </style>
+      
+  </head>
+  <body>
+      
+    <div class="switch__container">
+      <input id="switch-flat" class="switch switch--flat" type="checkbox">
+      <label for="switch-flat"></label>
+    </div>
+        
+    <img src="../Logos/finallogo.png" class="logo">
+    <img src="../Logos/Logos/finallogo.png" class="logo2">
+    <header>
+      <div class="navbar">
+  
+        
+      <nav class="menu active">
+      <ol>
+        <li class="menu-item"><a href="../index.html">Home</a></li>
+  
+        <li class="menu-item">
+        <a href="#">Artigos</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a href="artigo1.html">Higiene</a></li>
+          <li class="menu-item"><a href="artigo2.html">Fases</a></li>
+          <li class="menu-item"><a href="artigo3.html">Terapia</a></li>
+          <li class="menu-item"><a href="artigo4.html">Insônia </a></li>
+          <li class="menu-item"><a href="artigo5.html">Hypnos</a></li>
+          <li class="menu-item"><a href="artigo6.html">Paralisia</a></li>
+  
+        </ol>
+        </li>
+        <li class="menu-item"><a href="sonhos.html">Sonhos</a></li>
+        <li class="menu-item">
+        <a href="animaquiz.html">Quiz</a>
+        </li>
+        <li class="menu-item"><a href="musicas.html">Músicas</a></li>
+        <li class="menu-item"><a href="sobre.html">Sobre</a></li>
+      </ol>
+      </nav>
+      </div>
+      </header>
+      
+      
+
+          <script src="../Javascript/script.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+          <script src="../Javascript/button.js"></script>
+          <script src="../Javascript/script.js"></script>
+            <script src="../Javascript/pesquisa.js"></script>
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      
+      
+        <h1 class="sonhost">Sonhos</h1> 
+      
+        
+            <form action="sonho1.html">
+              <input type="search" required>
+              <i class="fa fa-search"></i>
+            </form>
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      
+      
+      <div class="banner">
+        <video autoplay muted loop>
+            <source src="../videos/bg.mp4" type="video/mp4">
+        </video>
+    </div>
+  </body>
+</html>
